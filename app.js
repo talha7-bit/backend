@@ -25,4 +25,4 @@ app.use("/api/appointment",appointmentrouter)
 app.get("/",(req,res)=>{
     res.send("everything is fine")
 })
-export {app}
+export default app

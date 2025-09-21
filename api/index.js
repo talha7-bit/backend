@@ -1,4 +1,4 @@
-import { app } from "../app.js";
+import app from "../app.js"
 import ServerlessHttp from "serverless-http";
 import connectdb from "../src/db/db.js"
 import dotenv from "dotenv"
