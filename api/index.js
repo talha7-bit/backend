@@ -5,5 +5,10 @@ import dotenv from "dotenv"
 
 
 dotenv.config()
-connectdb()
+try {
+   await connectdb()
+   console.log("db connected")
+} catch (error) {
+   console.log("db error",error) 
+}
 export const handler=ServerlessHttp(app)
