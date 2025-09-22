@@ -20,6 +20,10 @@ app.get("/",(req,res)=>{
     res.send("API is working")
 })
 
+app.get("/api/tset",(req,res)=>{
+    res.json({message:"Backend is working"})
+})
+
 
 app.use("/api/doctor",doctorrouter)
 app.use("/api/user",userrouter)
