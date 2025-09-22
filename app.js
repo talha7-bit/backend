@@ -22,7 +22,5 @@ app.use("/api/user",userrouter)
 app.use("/api/admin",adminrouter)
 app.use("/api/appointment",appointmentrouter)
 
-app.get("/",(req,res)=>{
-    res.send("everything is fine")
-})
+
 export default app
