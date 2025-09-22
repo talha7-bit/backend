@@ -17,6 +17,6 @@ app.listen(PORT,()=>{
 })
 */
 
-export default (req,res)=>{
+export default function handler(req,res){
     app(req,res)
 }
