@@ -16,6 +16,10 @@ app.use(cors({
     credentials:true
 }))
 
+app.get("/",(req,res)=>{
+    res.send("API is working")
+})
+
 
 app.use("/api/doctor",doctorrouter)
 app.use("/api/user",userrouter)
