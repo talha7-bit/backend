@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 app.use(cors({
-    origin:"https://frontendhmsproject.vercel.app",
+    origin:"https://frontendhmsp.vercel.app",
     //maxAge:["GET","POST","PUT","DELETE"],
     credentials:true
 }))
