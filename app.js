@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 app.use(cors({
     origin:"https://hmsfp.vercel.app",
-    maxAge:["GET","POST","PUT","DELETE"],
+    //maxAge:["GET","POST","PUT","DELETE"],
     credentials:true
 }))
 
