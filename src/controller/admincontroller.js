@@ -94,7 +94,12 @@ export const logout=async(req,res,next)=>{
        }
        console.log("working")
        res.status(200)
-       .clearCookie("token")
+       .clearCookie("token",{
+         httpOnly:true,
+            secure:true,
+            sameSite:"none",
+            maxAge: 7 * 24 * 60 * 60 * 1000
+       })
        .json(
         new Apiresponse(200,{},"admin logged out succesfully")
        )
