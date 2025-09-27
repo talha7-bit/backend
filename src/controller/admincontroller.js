@@ -70,7 +70,11 @@ export const login=async(req,res,next)=>{
         }
 
         res.status(200)
-        .cookie("token",token)
+        .cookie("token",token,{
+            httpOnly:true,
+            secure:true,
+            sameSite:none
+        })
         .json(
             new Apiresponse(200,{},"admin logged in succesfully")
         )
