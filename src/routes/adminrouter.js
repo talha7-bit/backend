@@ -16,6 +16,7 @@ router.post("/logout",verifya,logout)
 router.get("/accepted",accepted)
 
 router.get("/",verifya,(req,res,next)=>{
+    console.log('admin route was hit')
     try {
         if(!req.user){
             throw new Apierror(400,"admin should login first")
